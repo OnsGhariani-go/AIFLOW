@@ -1,6 +1,4 @@
 # AIFLOW
-Idée Générale & Problématique
-
 ### La Problématique
 De nos jours, les étudiants en informatique et en ingénierie font souvent face à une lacune majeure : ils apprennent les définitions formelles des algorithmes (BFS, DFS, Dijkstra, Heuristique) sans saisir concrètement **quand**, **pourquoi** et **comment** les appliquer de manière optimale. La théorie reste souvent abstraite.
 
