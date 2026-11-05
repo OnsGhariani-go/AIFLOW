@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Flow - Connect</title>
+    <link rel="stylesheet" href="aiflow.css">
+</head>
+<body>
+
+<div class="game-wrapper">
+    <section id="step1" class="section">
+        <div class="header-zone">
+            <h2>STEP 1 : </h2>
+            <span class="hint"> Je suis un Type tres recou </span>
+        </div>
+        
+        <div id="graph-dijkstra" class="graph-area">
+            <canvas id="game-canvas"></canvas>
+        </div>
+        
+        <div class="word-grid" id="grid1">
+            <div class="letter-box"></div>
+            <div class="letter-box"></div>
+            <div class="letter-box"></div>
+        </div>
+        <p id="feedback1" class="status-msg"></p>
+    </section>
+
+
+    <section id="step2" class="section locked">
+    <div class="header-zone">
+        <h2>STEP 2 : </h2>
+        <span class="hint"> En binaire c'est 10000000 ? </span>
+    </div>
+    
+<div id="graph-heuristic" class="graph-area">
+    <canvas id="canvas-h2"></canvas>
+    <div style="position: absolute; bottom: 10px; left: 10px; color: #00d4ff; font-family: monospace;">
+        Total Cost: <span id="total-cost">0</span>
+    </div>
+</div>
+    
+    <div class="word-grid" id="grid2">
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+    </div>
+    <p id="feedback2" class="status-msg"></p>
+        </section>
+
+
+
+
+        <section id="step3" class="section locked">
+    <div class="header-zone">
+        <h2>STEP 3 : (Final)</h2>
+        <span class="hint"> Tel fils tel Pere </span>
+    </div>
+    <div id="graph-bfs" class="graph-area">
+        <canvas id="canvas-s3"></canvas>
+    </div>
+    <div class="word-grid" id="grid3">
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+        <div class="letter-box"></div>
+    </div>
+    <p id="feedback3" class="status-msg"></p>
+</section>
+</div>
+
+<script src="aiflow.js"></script>
+</body>
+</html>
